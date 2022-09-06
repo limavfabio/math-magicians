@@ -1,4 +1,4 @@
-# Project Name
+# Math Magicians
 
 A calculator web app made with React using create-react-app
 
@@ -24,6 +24,11 @@ npm install
 npm run build
 ```
 - You can find the built web app on ./dist
+
+- Alternatively you can start the development server
+```
+npm start
+```
 
 # Authors
 
