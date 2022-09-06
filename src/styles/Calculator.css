@@ -1,6 +1,9 @@
 .calculator-body {
   display: grid;
   grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+  width: 400px;
+  margin: auto;
+  outline: 1px solid black;
 }
 
 button {
@@ -14,12 +17,15 @@ button {
 }
 
 .operator {
-  background-color: yellow;
+  background-color: orange;
 }
 
 .result {
   background-color: lightgray;
   outline: 1px solid lightgray;
-  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 15px;
   grid-column: 1/5;
 }
