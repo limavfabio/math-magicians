@@ -1,9 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import '../styles/Calculator.css';
-/* eslint-disable no-unused-vars */
 import calculate from '../logic/Calculate';
-import operate from '../logic/Operate';
 
 class Calculator extends React.Component {
   constructor(props) {
