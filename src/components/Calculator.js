@@ -13,7 +13,6 @@ function Calculator() {
     setState((state) => calculate(state, e.target.textContent));
   };
 
-  console.log(state.total);
   return (
     <section className="calculator-body">
       {/* result Row */}
