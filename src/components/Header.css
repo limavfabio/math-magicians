@@ -1,0 +1,17 @@
+.Header {
+  display: flex;
+  background-color: blanchedalmond;
+}
+
+h1 {
+  padding-left: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  margin: 0 3rem 0 auto;
+  align-self: center;
+}
