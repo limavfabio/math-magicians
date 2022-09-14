@@ -1,0 +1,13 @@
+.quote {
+  margin: 5rem;
+}
+
+.text {
+  font-size: large;
+}
+
+.author {
+  font-size: larger;
+  font-weight: bold;
+  text-align: end;
+}
