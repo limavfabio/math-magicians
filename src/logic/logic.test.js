@@ -50,18 +50,6 @@ describe('calculate.js tests', () => {
     expect(calculate(obj, buttonName).operation).toBe(buttonName);
   });
 
-  test('AC Button', () => {
-    const buttonName = 'AC';
-    const object = {
-      total: '78900',
-      next: '235',
-      operation: buttonName,
-    };
-    expect(calculate(object, buttonName).total).toBe(null);
-    expect(calculate(object, buttonName).next).toBe(null);
-    expect(calculate(object, buttonName).operation).toBe(null);
-  });
-
   test('Dot notation', () => {
     const buttonName = '.';
     const object = {
@@ -92,6 +80,18 @@ describe('calculate.js tests', () => {
       operation: '*',
     };
     expect(calculate(object, buttonName).total).toBe('-2271');
+    expect(calculate(object, buttonName).next).toBe(null);
+    expect(calculate(object, buttonName).operation).toBe(null);
+  });
+
+  test('AC Button', () => {
+    const buttonName = 'AC';
+    const object = {
+      total: '78900',
+      next: '235',
+      operation: buttonName,
+    };
+    expect(calculate(object, buttonName).total).toBe(null);
     expect(calculate(object, buttonName).next).toBe(null);
     expect(calculate(object, buttonName).operation).toBe(null);
   });
