@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-expressions */
 import { fireEvent, render, screen } from '@testing-library/react';
-import Calculator from './Calculator';
+import Calculator from '../components/Calculator';
 
 describe('Calculator tests', () => {
   test('Mocking Calculator Components', () => {
