@@ -1,17 +1,21 @@
 import { render, screen } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header';
 
-test('renders learn react link', () => {
-  const header = render(<Header />);
-  expect(header).toMatchSnapshot();
-  const linkElement = screen.getByText(/Math Magicians/i);
-  const firstNavLink = screen.getByText(/Home/i);
-  const secondNavLink = screen.getByText(/Calculator/i);
-  const thirdNavLink = screen.getByText(/Quote/i);
-  expect(linkElement).toBeInTheDocument();
-  expect(firstNavLink).toBeInTheDocument();
-  expect(secondNavLink).toBeInTheDocument();
-  expect(thirdNavLink).toBeInTheDocument();
+describe('Header test', () => {
+  test('Renders Header component', () => {
+    render(
+      <Router>
+        <Header />
+      </Router>,
+    );
+    const headerTitle = screen.getByText('Math Magicians');
+    const headerLink = screen.getByText('Calculator');
+    const headerLink2 = screen.getByText('Quote');
+    expect(headerTitle).toBeInTheDocument();
+    expect(headerLink).toBeInTheDocument();
+    expect(headerLink2).toBeInTheDocument();
+  });
 });
 
 // import { render, screen } from '@testing-library/react';

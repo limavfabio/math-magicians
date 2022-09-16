@@ -2,7 +2,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import Calculator from './Calculator';
 
-describe.only('Calculator tests', () => {
+describe('Calculator tests', () => {
   test('Mocking Calculator Components', () => {
     const tree = render(<Calculator />);
     expect(tree).toMatchSnapshot();
