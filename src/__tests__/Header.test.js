@@ -7,7 +7,7 @@ describe('Header test', () => {
     render(
       <Router>
         <Header />
-      </Router>,
+      </Router>
     );
     const headerTitle = screen.getByText('Math Magicians');
     const headerLink = screen.getByText('Calculator');
@@ -17,12 +17,3 @@ describe('Header test', () => {
     expect(headerLink2).toBeInTheDocument();
   });
 });
-
-// import { render, screen } from '@testing-library/react';
-// import App from './App';
-
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
