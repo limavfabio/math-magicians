@@ -7,7 +7,7 @@ describe('Header test', () => {
     render(
       <Router>
         <Header />
-      </Router>
+      </Router>,
     );
     const headerTitle = screen.getByText('Math Magicians');
     const headerLink = screen.getByText('Calculator');
