@@ -95,4 +95,3 @@ describe('calculate.js tests', () => {
     expect(calculate(object, buttonName).operation).toBe(null);
   });
 });
-
